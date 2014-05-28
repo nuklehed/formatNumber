@@ -1,6 +1,6 @@
 # formatNumber
 
-A simple clean way to format numbers with Javascript. Inspired by PHP's format_number function.
+A simple and clean way to format numbers with Javascript. Inspired by PHP's format_number function.
 
 ## Arguments
 
