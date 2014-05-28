@@ -11,16 +11,21 @@ A simple and clean way to format numbers with grouped thousands in Javascript. F
 
 ## Usage
 
-Default format is US with comma thousand seperators and decimal point.
+English notation is the default which includes a comma thousands seperator and a period decimal point.
 
 ```javascript
-// US format example
+// English notation example
 console.log(formatNumber(1000000));
 1,000,000.00
 ```
 
 ```javascript
-// French format
+// French notation example; note: the number is passed as a string!
 console.log(formatNumber('1000000', 2, ',', ' '));
 1 000 000,00
 ```
+
+```javascript
+// English notation without thousands separator
+console.log(formatNumber(1000000, 2, '.', ''));
+// 1000000.00
