@@ -28,4 +28,4 @@ console.log(formatNumber('1000000', 2, ',', ' '));
 ```javascript
 // English notation without thousands separator
 console.log(formatNumber(1000000, 2, '.', ''));
-// 1000000.00
+1000000.00
