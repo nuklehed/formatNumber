@@ -1,6 +1,6 @@
 # formatNumber
 
-A simple and clean way to format numbers with Javascript. Inspired by PHP's format_number function.
+A simple and clean way to format numbers with grouped thousands in Javascript. Function signature copied from PHP's [number_format](http://www.php.net/manual/en/function.number-format.php) function.
 
 ## Arguments
 
