@@ -6,7 +6,7 @@
   $.formatNumber = function(number, options) {
     var $output, rgx, x, x1, x2;
     options = $.extend({}, $.formatNumber.default_options, options);
-    $output = $(element);
+    $output = $(options.element);
     number = parseFloat(number);
     if (isNaN(number)) {
       return false;
