@@ -3,7 +3,7 @@ $ = jQuery
 $.formatNumber = (number, options) ->
 	options = $.extend({}, $.formatNumber.default_options, options)
 
-	$output = $(element)
+	$output = $(options.element)
 	
 	number = parseFloat(number)
 	return false if isNaN(number)
