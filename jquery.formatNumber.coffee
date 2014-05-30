@@ -3,8 +3,6 @@ $ = jQuery
 $.formatNumber = (number, options) ->
 	options = $.extend({}, $.formatNumber.default_options, options)
 
-	$output = $(options.element)
-	
 	number = parseFloat(number)
 	return false if isNaN(number)
 
@@ -19,12 +17,9 @@ $.formatNumber = (number, options) ->
 	x1 = x1.replace(rgx, "$1" + "," + "$2") while rgx.test(x1)
 	x1 = x1.replace(/\,/g, options.thousands_sep)
 	
-	$output.append x1 + options.decimal_pnt + x2
-	
-	$output
+	x1 + options.decimal_pnt + x2
 	
 $.formatNumber.default_options =
 	decimals: 2
 	decimal_pnt: '.'
 	thousands_sep: ','
-	element: 'span'
